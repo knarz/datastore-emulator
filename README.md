@@ -18,7 +18,7 @@ datastore:
 worker:
   build: .
   environment:
-    - DATASTORE_EMULATOR_HOST=pubsub:8432
+    - DATASTORE_EMULATOR_HOST=datastore:8432
   restart: always
   links:
     - datastore
