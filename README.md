@@ -11,10 +11,7 @@ Or in a `docker-compose.yml`
 
 ```
 datastore:
-  build: knarz/datastore-emulator
-  ports:
-    - "8432"
-  restart: always
+  image: knarz/datastore-emulator
 worker:
   build: .
   environment:
