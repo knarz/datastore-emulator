@@ -6,6 +6,7 @@ LABEL app="datastore-emulator"
 ENV CLOUDSDK_CORE_DISABLE_PROMPTS 1
 ENV DATA_DIR "/opt/datastore"
 ENV HOST_PORT 8432
+ENV CONSISTENCY 0.9
 ENV CLOUDSDK_CORE_PROJECT "test-project"
 
 RUN apk add --no-cache curl bash python
