@@ -3,6 +3,7 @@ FROM java:jre-alpine
 MAINTAINER Sascha Hanse <shanse@gmail.com>
 LABEL app="datastore-emulator"
 
+ENV IN_MEMORY "false"
 ENV CLOUDSDK_CORE_DISABLE_PROMPTS 1
 ENV DATA_DIR "/opt/datastore"
 ENV HOST_PORT 8432
